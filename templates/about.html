@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}About - Personal Website{% endblock %}
+
+{% block content %}
+<div class="container my-5">
+  <h2>About Me</h2>
+  <div class="row">
+    <div class="col-md-4">
+      <img src="{{ url_for('static', filename='images/profile-placeholder.png') }}" class="img-fluid rounded-circle" alt="Profile Picture">
+    </div>
+    <div class="col-md-8">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.
+      </p>
+      <p>
+        Skills: Python, Machine Learning, Data Analysis, Bioinformatics, Deep Learning, etc.
+      </p>
+    </div>
+  </div>
+</div>
+{% endblock %}

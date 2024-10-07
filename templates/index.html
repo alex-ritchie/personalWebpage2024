@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}Home - Personal Website{% endblock %}
+
+{% block content %}
+<div class="container-fluid p-0">
+  <!-- Hero Section -->
+  <section class="jumbotron text-center text-white d-flex align-items-center" style="background-image: url('{{ url_for('static', filename='images/hero-bg.jpg') }}'); height: 100vh; background-size: cover;">
+    <div class="container">
+      <h1 class="display-4">[Your Name]</h1>
+      <p class="lead">AI Engineer | Data Scientist</p>
+      <a href="{{ url_for('projects') }}" class="btn btn-primary btn-lg">View My Work</a>
+    </div>
+  </section>
+</div>
+{% endblock %}
+
