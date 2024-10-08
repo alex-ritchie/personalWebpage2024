@@ -8,4 +8,98 @@ class Config:
     EMAIL = 'alex.ritchie.ml@gmail.com'
     GITHUB_URL = 'https://github.com/alex-ritchie'
     LINKEDIN_URL = 'https://linkedin.com/in/alexander-ritchie'
-    # Add other personal info as needed
+
+    SKILLS = [
+        # Core Machine Learning Skills
+        'Deep Learning',
+        'Statistical Machine Learning',
+        "Autoregressive Models",
+        'Generative Models',
+        'Transfer Learning',
+        'Fairness in Machine Learning',
+        'Explainable AI',
+        'Low Precision Model Training',
+        'Distributed Model Training',
+        'Model Quantization',
+        'Model Pruning and Sparsity',
+        'Model Selection and Evaluation',
+        'Nonparametric Methods',
+        'A/B Testing and Experiment Design',
+        
+        
+        # Natural Language Processing
+        'Large Language Models',
+        'Local LLMs',
+        'Transformer Architectures',
+        'Prompt Engineering',
+        ''
+        'Parameter Efficient Fine Tuning',
+        'Recurrent Architectures'
+        'Text Classification',
+        'Speech Recognition and Speaker Identification',
+
+        # Data Analysis and Modeling
+        'Exploratory Data Analysis',
+        'Data Visualization',
+        'Feature Engineering',
+        'Statistical Modeling',
+        'Hypothesis Testing',
+
+        # Programming Languages
+        'Python',
+        'C++',
+        'Bash',
+        'Julia',
+        'Matlab',
+
+        # Python Libraries and Frameworks
+        'PyTorch',
+        'NumPy',
+        'Pandas',
+        'Transformers (Hugging Face)',
+        'LangChain',
+        'Scikit-Learn',
+        'SciPy',
+        'Keras',
+        'NLTK',
+        'XGBoost',
+        'PySpark',
+
+        # Tools and Platforms
+        'Docker',
+        'Linux',
+        'SQL',
+        'Git',
+        'SVN',
+        'Tableau',
+        'Excel',        
+        'Flask',
+        'Jenkins',
+
+        # # Cloud and Big Data Technologies
+        # 'AWS Services (Sagemaker, Rekognition, DynamoDB, Glue, Kinesis)',
+        # 'Big Data Processing',
+        # 'Cloud Model Deployment',
+
+        # Hardware/Systems Experience
+        'Analog Electronics (Audio)',
+        'Embedded Systems',
+        'Digital Signal Processing (Audio)'
+        'Firmware Development',
+        'Soldering',
+        'System Design and Control Logic',
+        'Neuromorphic Hardware',
+
+        # Professional and Soft Skills
+        'Leadership and Team Management',
+        'Technical Communication',
+        'Public Speaking',
+        'Critical Thinking and Problem Solving',
+        'Time Management and Multitasking',
+        'Conflict Resolution',
+        'Autodidact',
+        'Decision Making',
+        'Collaboration',
+        'Research Design and Execution',
+        'Project Management',
+    ]
