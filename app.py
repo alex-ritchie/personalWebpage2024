@@ -21,19 +21,6 @@ def inject_personal_info():
 # Import routes from a separate routes file
 from routes import *
 
-# # Contact route
-# @app.route('/contact', methods=['GET', 'POST'])
-# def contact():
-#     if request.method == 'POST':
-#         name = request.form.get('name')
-#         email = request.form.get('email')
-#         message = request.form.get('message')
-
-#         # Implement email sending logic here or save to database
-#         flash('Thank you for your message! I will get back to you soon.', 'success')
-#         return redirect('/contact')
-#     return render_template('contact.html')
-
 if __name__ == '__main__':
     # Print all registered routes for debugging
     for rule in app.url_map.iter_rules():

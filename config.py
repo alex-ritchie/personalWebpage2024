@@ -26,13 +26,15 @@ class Config:
         'Nonparametric Methods',
         'A/B Testing and Experiment Design',
         
+        # LLMs/Transformers
+        'Large Language Models',
+        'Prompt Engineering',
+        'Local LLMs',
+        'Transformer Architecture',
+        'Encoder Only Architectures',
+        'Encoder/Decoder Architectures',
         
         # Natural Language Processing
-        'Large Language Models',
-        'Local LLMs',
-        'Transformer Architectures',
-        'Prompt Engineering',
-        ''
         'Parameter Efficient Fine Tuning',
         'Recurrent Architectures'
         'Text Classification',
@@ -53,28 +55,47 @@ class Config:
         'Matlab',
 
         # Python Libraries and Frameworks
+        ## Model Training & Development
         'PyTorch',
-        'NumPy',
-        'Pandas',
-        'Transformers (Hugging Face)',
-        'LangChain',
-        'Scikit-Learn',
-        'SciPy',
+        'Lightning',
+        'wandb',
+        'Tensorboard'
+        'sklearn',
         'Keras',
         'NLTK',
         'XGBoost',
-        'PySpark',
-
-        # Tools and Platforms
+        'fastai',
+        
+        ## AI Inference / Prototyping / API Tools
+        'Transformers',
+        'LangChain',
+        'Gradio', 
+        
+        ## Data Manipulation and Visualization
+        'Pandas',
+        'Dask', # Learning
+        'Polars', # Learning
+        'Geopandas', # Learning
+        'PySpark', # Learning
+        'Matplotlib',
+        'Seaborn',
+        'Plotly',
+        'Altair',
+        
+        ## General Numerical  Computing
+        'NumPy',
+        'cuPy', # Learning
+        'JAX', # Learning
+        'SciPy',
+        
+        # Platforms, OS, and Other Tools
         'Docker',
         'Linux',
         'SQL',
         'Git',
         'SVN',
-        'Tableau',
         'Excel',        
         'Flask',
-        'Jenkins',
 
         # # Cloud and Big Data Technologies
         # 'AWS Services (Sagemaker, Rekognition, DynamoDB, Glue, Kinesis)',
@@ -97,7 +118,9 @@ class Config:
         'Critical Thinking and Problem Solving',
         'Time Management and Multitasking',
         'Conflict Resolution',
-        'Autodidact',
+        'Self-Teaching',
+        'Teaching',
+        'Mentorship',
         'Decision Making',
         'Collaboration',
         'Research Design and Execution',
