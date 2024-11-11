@@ -1,4 +1,5 @@
-from flask import Flask, render_template, request, flash, redirect
+# app.py
+from flask import Flask
 from config import Config
 from datetime import datetime
 
@@ -15,6 +16,9 @@ def inject_personal_info():
         'linkedin_url': Config.LINKEDIN_URL,
         'skills': Config.SKILLS,
         'current_year': datetime.utcnow().year,
+        'publications': Config.PUBLICATIONS,
+        'pronoun_3p': Config.PRONOUN_3P,
+        'pronoun_3pp': Config.PRONOUN_3PP,
         # Add other variables as needed
     }
 

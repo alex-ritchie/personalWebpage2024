@@ -1,0 +1,46 @@
+</div>
+<!--
+<h3 class="mt-5">Skills</h3>
+<div class="row">
+    <!-- Machine Learning Skills -->
+    <div class="col-md-4">
+        <h4>Machine Learning</h4>
+        <ul>
+            {% for skill in skills %}
+                {% if skill in ['Deep Learning', 'Machine Learning', 'Generative Models', 'Reinforcement Learning', 'Transfer Learning', 'Statistical Learning', 'Fairness in Machine Learning', 'Explainable AI'] %}
+                    <li>{{ skill }}</li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+    </div>
+    <!-- Programming Skills -->
+    <div class="col-md-4">
+        <h4>Programming Languages & Frameworks</h4>
+        <ul>
+            {% for skill in skills %}
+                {% if skill in ['Python', 'C++', 'Julia', 'Matlab', 'PyTorch', 'TensorFlow', 'Scikit-Learn', 'NumPy', 'Pandas', 'Transformers (Hugging Face)', 'Bash', 'Jupyter Notebooks'] %}
+                    <li>{{ skill }}</li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+    </div>
+    <!-- Tools and Platforms -->
+    <div class="col-md-4">
+        <h4>Tools & Platforms</h4>
+        <ul>
+            {% for skill in skills %}
+                {% if skill in ['Git', 'SQL', 'Apache Spark', 'Tableau', 'AWS Services (Sagemaker, Rekognition, DynamoDB, Glue, Kinesis)', 'Flask', 'Docker'] %}
+                    <li>{{ skill }}</li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+<h3 class="mt-5">Professional Skills</h3>
+<ul>
+    {% for skill in skills %}
+        {% if skill in ['Leadership and Team Management', 'Technical Communication', 'Public Speaking', 'Problem Solving', 'Research Design and Execution', 'Project Management'] %}
+            <li>{{ skill }}</li>
+        {% endif %}
+    {% endfor %}
+</ul>

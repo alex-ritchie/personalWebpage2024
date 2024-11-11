@@ -1,0 +1,24 @@
+<!-- templates/about.html -->
+
+{% extends "base.html" %}
+{% block title %}About - {{ your_name }}{% endblock %}
+
+{% block content %}
+<section id="about" class="container my-5">
+    <h2>About Me</h2>
+    <div class="row">
+        <div class="col-md-8">
+            <p>
+                {{ your_name }} is a {{ job_title }} with over 7 years of experience spanning academia, industry, and community-driven initiatives. 
+                {{ pronoun_3p | capitalize }} research covers a wide range of machine learning topics, from statistical learning and generative models to fairness and optimization. 
+                {{ your_name }} has extensive experience in deep learning, nonparametric statistics, and applications of ML in public health, such as leading 
+                air quality monitoring projects to fight environmental injustice.
+            </p>
+            <a href="{{ url_for('projects') }}" class="btn btn-primary btn-lg mt-3">View My Work</a>
+        </div>
+        <div class="col-md-4">
+            <img src="{{ url_for('static', filename='content/images/suit2024.jpeg') }}" alt="{{ your_name }}" class="img-fluid rounded-circle">
+        </div>
+    </div>  
+</section>
+{% endblock %}

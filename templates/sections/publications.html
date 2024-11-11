@@ -1,0 +1,33 @@
+<!-- templates/publications.html -->
+
+{% extends "base.html" %}
+{% block title %}Publications - {{ your_name }}{% endblock %}
+
+{% block content %}
+<section id="publications" class="container my-5">
+    <h2>Publications</h2>
+    <ul class="list-group">
+        {% for publication in publications %}
+        <li class="list-group-item">
+            <strong>{{ publication.title }}</strong><br>
+            <em>{{ publication.conference }} ({{ publication.year }})</em><br>
+            <span>Authors: {{ publication.authors }}</span><br>
+            {% if publication.abstract %}
+                <p>{{ publication.abstract }}</p>
+            {% endif %}
+            <div class="mt-2">
+                {% if publication.paper_url %}
+                    <a href="{{ publication.paper_url }}" target="_blank" class="btn btn-secondary btn-sm">View Paper</a>
+                {% endif %}
+                {% if publication.code_url %}
+                    <a href="{{ publication.code_url }}" target="_blank" class="btn btn-secondary btn-sm">View Code</a>
+                {% endif %}
+            </div>
+        </li>
+        {% else %}
+        <li class="list-group-item text-center">
+            <em>No publications available at this time.</em></li>
+        {% endfor %}
+    </ul>
+</section>
+{% endblock %}
