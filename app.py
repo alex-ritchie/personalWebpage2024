@@ -1,4 +1,5 @@
 # app.py
+from socket import gethostname
 from flask import Flask
 from config import Config
 from datetime import datetime
@@ -30,4 +31,8 @@ if __name__ == '__main__':
     # Print all registered routes for debugging
     # for rule in app.url_map.iter_rules():
     #     print(rule)
-    app.run(debug=True)
+    # app.run(debug=True)
+    if 'liveconsole' not in gethostname():
+        app.run()
+    else:
+        app.run(debug=True)
