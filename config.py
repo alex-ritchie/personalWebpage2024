@@ -11,6 +11,7 @@ class Config:
     EMAIL = 'alex.ritchie.ml@gmail.com'
     GITHUB_URL = 'https://github.com/alex-ritchie'
     LINKEDIN_URL = 'https://linkedin.com/in/alexander-ritchie'
+    GOOGLE_SCHOLAR_URL = 'https://scholar.google.com/citations?user=7D22UVwAAAAJ&hl=en&oi=ao'
     SKILLS = SKILLS
     PUBLICATIONS = PUBLICATIONS
     

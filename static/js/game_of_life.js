@@ -26,15 +26,23 @@ function buildGrid() {
 }
 
 let grid = buildGrid();
+let previousGrid = buildGrid();
 
-function render(grid) {
+function render(grid, previousGrid) {
     ctx.clearRect(0, 0, canvas.width, canvas.height); // Clear the canvas before rendering
     for (let col = 0; col < grid.length; col++) {
         for (let row = 0; row < grid[col].length; row++) {
             const cell = grid[col][row];
+            const prevCell = previousGrid[col][row];
             ctx.beginPath();
             ctx.rect(col * resolution, row * resolution, resolution, resolution);
-            ctx.fillStyle = cell ? colors.alive : colors.dead;
+            if (cell !== prevCell) {
+                ctx.fillStyle = cell ? colors.alive : colors.dead;
+                ctx.globalAlpha = 0.5; // Adjust opacity for fade effect
+            } else {
+                ctx.fillStyle = cell ? colors.alive : colors.dead;
+                ctx.globalAlpha = 1;
+            }
             ctx.fill();
             ctx.stroke();
         }
@@ -77,10 +85,11 @@ function nextGen(grid) {
 }
 
 function update() {
+    previousGrid = grid.map(arr => [...arr]);
     grid = nextGen(grid);
-    render(grid);
-    requestAnimationFrame(update);
+    render(grid, previousGrid);
+    setTimeout(update, 500); // Adjust the delay (in milliseconds) to control the speed
 }
 
-render(grid);
-requestAnimationFrame(update);
+render(grid, previousGrid);
+setTimeout(update, 500); // Adjust the delay (in milliseconds) to control the speed

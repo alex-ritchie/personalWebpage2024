@@ -3,7 +3,7 @@ from flask import render_template
 
 @app.route('/')
 def home():
-    return render_template('index.html')
+    return render_template('sections/about.html')
 
 @app.route('/about')
 def about():

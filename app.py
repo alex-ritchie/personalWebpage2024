@@ -14,6 +14,7 @@ def inject_personal_info():
         'email': Config.EMAIL,
         'github_url': Config.GITHUB_URL,
         'linkedin_url': Config.LINKEDIN_URL,
+        'google_scholar_url': Config.GOOGLE_SCHOLAR_URL,
         'skills': Config.SKILLS,
         'current_year': datetime.utcnow().year,
         'publications': Config.PUBLICATIONS,
@@ -27,6 +28,6 @@ from routes import *
 
 if __name__ == '__main__':
     # Print all registered routes for debugging
-    for rule in app.url_map.iter_rules():
-        print(rule)
+    # for rule in app.url_map.iter_rules():
+    #     print(rule)
     app.run(debug=True)
